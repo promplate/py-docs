@@ -132,6 +132,8 @@ I am a **prompt engineer** who suffered from the following problems:
     <Template some-prompt>
     ```
 
+    ---
+
     - [x] writing short prompt through literals
 
     ```py
@@ -149,6 +151,8 @@ I am a **prompt engineer** who suffered from the following problems:
 
     1. `#!py repr(foo)` and `#!py str(foo)` are slightly different. `#!py repr(foo)` will output `#!jsx </foo/>`
     2. If you `#!py print(Template("..."))` so that there is no "variable name", it will be simply `#!py <Template>`.
+
+    ---
 
     - [x] (new in `v0.3`) writing chat prompts through magic
 
@@ -222,5 +226,5 @@ Promplate has a flexible callback system similarly, but you can bind simple call
 
 ### Further reading
 
-You can the [quick-start](./quick-start) tutorial, which is a more detailed explanation.
+You can the [quick-start](./quick-start.md) tutorial, which is a more detailed explanation.
 If you have any questions, feel free to ask on [GitHub Discussions](https://github.com/promplate/core/discussions/categories/q-a)!
