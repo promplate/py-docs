@@ -1,0 +1,11 @@
+[project]
+authors = [{ name = "Muspi Merol", email = "me@promplate.dev" }]
+dependencies = ["mkdocs>=1.5.3", "mkdocs-material>=9.5.6"]
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.scripts]
+dev = "mkdocs serve --dirtyreload"

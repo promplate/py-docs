@@ -1,0 +1,70 @@
+site_name: Promplate
+repo_url: https://github.com/promplate/core
+repo_name: promplate/core
+
+theme:
+  name: material
+  features:
+    - search.suggest
+    - search.highlight
+    - navigation.tracking
+    - navigation.sections
+    - navigation.prune
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+  palette:
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Open Sans
+    code: Fira Code
+  icon:
+    repo: material/github
+    annotation: material/star-four-points-circle
+plugins:
+  - search
+markdown_extensions:
+  - attr_list
+  - admonition
+  - md_in_html
+  - toc:
+      permalink: "#"
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+extra:
+  social:
+    - icon: material/email
+      link: me@promplate.dev
+    - icon: material/bug
+      link: https://github.com/promplate/core/issues
+    - icon: material/chat-question
+      link: https://github.com/promplate/core/discussions/categories/q-a
+    - icon: material/web
+      link: https://promplate.dev
+    - icon: material/package-down
+      link: https://pypi.org/project/promplate/
+    - icon: fontawesome/brands/github
+      link: https://github.com/promplate
+extra_css:
+  - stylesheets/extra.css

@@ -1,0 +1,11 @@
+[data-md-color-scheme="slate"] {
+  --md-accent-fg-color: var(--md-primary-fg-color);
+}
+
+[data-md-color-scheme="default"] {
+  --md-accent-fg-color: var(--md-primary-fg-color);
+}
+
+code {
+  font-feature-settings: "calt" 1;
+}
