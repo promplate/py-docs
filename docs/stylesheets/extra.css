@@ -1,10 +1,6 @@
-[data-md-color-scheme="slate"] {
-  --md-accent-fg-color: var(--md-primary-fg-color);
-}
+/* extra.css */
 
-[data-md-color-scheme="default"] {
-  --md-accent-fg-color: var(--md-primary-fg-color);
-}
+/* Add custom styles here */
 
 code {
   font-feature-settings: "calt" 1;
