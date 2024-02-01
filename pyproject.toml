@@ -1,6 +1,13 @@
 [project]
+name = "promplate-py-docs"
+version = "1"
 authors = [{ name = "Muspi Merol", email = "me@promplate.dev" }]
-dependencies = ["mkdocs>=1.5.3", "mkdocs-material>=9.5.6"]
+dependencies = [
+    "mkdocs>=1.5.3",
+    "mkdocs-material>=9.5.6",
+    "brotli>=1.1.0",
+    "minify-html>=0.15.0",
+]
 requires-python = ">=3.8"
 license = { text = "MIT" }
 
@@ -9,3 +16,5 @@ distribution = false
 
 [tool.pdm.scripts]
 dev = "mkdocs serve --dirtyreload"
+min = { call = "minify:main" }
+gen = { composite = ["mkdocs build", "min"] }
