@@ -9,7 +9,7 @@ description: Let's begin prompting in 1 minute
 Directly install from [PyPI](https://pypi.org/project/promplate/):
 
 ```sh
-pip install promplate[openai]
+pip install promplate[openai,httpx]
 ```
 
 We are using `OpenAI` just for demonstration. In fact, **you can use any LLM as you want**.
@@ -48,7 +48,6 @@ Then call it simply with a string:
 ```
 
 ???+ tip "If you don't have an OpenAI API Key 🔑"
-
     You could use our FREE proxy site as `base_url` like this:
 
     ```py
