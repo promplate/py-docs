@@ -22,7 +22,7 @@ First, **Open a python REPL** 💻 (`ipython` or `jupyter` are OK. Just any REPL
 
 ```py
 >>> from promplate.llm.openai import ChatComplete # this simply wraps OpenAI's SDK
->>> complete = ChatComplete(api_key="...")
+>>> complete = ChatComplete(api_key="<your-api-key-here>")
 ```
 
 > The `api_key` should be filled with your API Key from [OpenAI Platform](https://platform.openai.com/account/api-keys)
