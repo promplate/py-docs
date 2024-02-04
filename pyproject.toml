@@ -16,5 +16,6 @@ distribution = false
 
 [tool.pdm.scripts]
 dev = "mkdocs serve --dirtyreload"
-min = { call = "minify:main" }
-gen = { composite = ["mkdocs build", "min"] }
+minify = { call = "minify:main" }
+inject = { call = "inject:main" }
+gen = { composite = ["inject", "mkdocs build", "minify"] }
