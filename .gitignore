@@ -5,6 +5,8 @@ __pycache__
 
 dist
 
+.netlify
+.vercel
 .vscode
 .fleet
 .idea

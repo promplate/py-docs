@@ -2,6 +2,9 @@ name: deploy github pages
 
 on: [push, workflow_dispatch]
 
+env:
+  SITE_URL: "https://promplate.github.io/py-docs/"
+
 permissions:
   contents: read
   pages: write
