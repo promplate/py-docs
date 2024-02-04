@@ -5,6 +5,8 @@ repo_name: promplate/core
 theme:
   name: material
   features:
+    - navigation.instant
+    - navigation.instant.progress
     - search.suggest
     - search.highlight
     - navigation.tracking
