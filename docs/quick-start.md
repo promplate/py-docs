@@ -30,20 +30,20 @@ First, **Open a python REPL** 💻 (`ipython` or `jupyter` are OK. Just any REPL
 Then call it like this:
 
 ```py
->>> complete("hi", model="gpt-3.5-turbo-1106")
+>>> complete("hi", model="gpt-3.5-turbo-0125")
 'Hello! How can I assist you today?'
 ```
 
 Perhaps you don't want to provide `model` parameter everytime you call `complete`, so you can bind it like this:
 
 ```py
->>> complete = ChatComplete(api_key="...").bind(model="gpt-3.5-turbo-1106")
+>>> complete = ChatComplete(api_key="...").bind(model="gpt-3.5-turbo-0125")
 ```
 
 Then call it simply with a string:
 
 ```py
->>> complete("hi", model="gpt-3.5-turbo-1106")
+>>> complete("hi", model="gpt-3.5-turbo-0125")
 'Hello! How can I assist you today?'
 ```
 
@@ -53,9 +53,7 @@ Then call it simply with a string:
 
     ```py
     >>> from promplate.llm.openai import ChatComplete
-    >>> from httpx import Client  # or AsyncClient if use use AsyncChatComplete
-    >>> client = Client(follow_redirects=True)  # this must be set because our free api uses 308 redirects
-    >>> complete = ChatComplete(base_url="https://promplate.dev", api_key="<any-value>", http_client=client).bind(model="gpt-3.5-turbo-1106")
+    >>> complete = ChatComplete(base_url="https://promplate.dev", api_key="").bind(model="gpt-3.5-turbo-0125")
     >>> complete("hi")
     'Hello! How can I assist you today?'
     ```
@@ -84,7 +82,7 @@ Then call it simply with a string:
 
     ```py
     >>> from promplate.llm.openai import ChatGenerate
-    >>> generate = ChatGenerate(api_key="...").bind(model="gpt-3.5-turbo-1106")
+    >>> generate = ChatGenerate(api_key="...").bind(model="gpt-3.5-turbo-0125")
     >>> for i in generate("Explain why 1 + 1 = 2"):
     ...     print(i, end="", flush=True)  # this will print generated tokens gradually
     ...
