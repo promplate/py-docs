@@ -57,7 +57,7 @@ markdown_extensions:
 extra:
   social:
     - icon: material/email
-      link: me@promplate.dev
+      link: mailto:me@promplate.dev
     - icon: material/bug
       link: https://github.com/promplate/core/issues
     - icon: material/chat-question
