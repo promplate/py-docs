@@ -42,7 +42,7 @@ Let's say I need to greet in foreign language. Let's compose two simple prompts 
     1. **Importing an LLM is optional.** If you only use `promplate` as a templating engine,
        running `pip install promplate` needs ***no dependency***.
     2. **Chaining nodes is simply adding them together.**
-       We believe that nice debug printing is a must for developpment experience.
+       We believe that nice debug printing is a must for development experience.
        So, with some magic behind the scenes, **if you `#!py print(chain)`, you will get `#!jsx </reply/> + </translate/>`.**
        This is useful if you have a lot of prompt templates and always use `print` to debug.
 
@@ -214,7 +214,7 @@ which enable you to reuse prompt template fragments in different prompts.
 
 #### Callbacks and output parsers are hard to bind
 
-In langchain, you can bind callback to a varity of event types.
+In langchain, you can bind callback to a variety of event types.
 Promplate has a flexible callback system similarly, but you can bind simple callbacks through decorators like `#!py @node.pre_process`.
 
 ### Features
