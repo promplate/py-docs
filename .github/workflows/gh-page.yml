@@ -30,7 +30,7 @@ jobs:
       - name: Generate pages
         run: pdm gen
       - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: site
       - name: Deploy to GitHub Pages
