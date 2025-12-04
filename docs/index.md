@@ -4,7 +4,7 @@ title: Introduction
 
 # Welcome to Promplate
 
-[**`Promplate`**](http://promplate.dev/) is a **templating framework** that progressively enhances your **prompt engineering** workflow with minimal dependency.
+[**`Promplate`**](http://promplate.dev/ "Interactive Tutorial - Promplate") is a **templating framework** that progressively enhances your **prompt engineering** workflow with minimal dependency.
 
 ```sh
 pip install promplate #(1)!
@@ -15,8 +15,8 @@ pip install promplate #(1)!
 
 !!! tip ""
 
-    **`Promplate`** runs well on [python 3.8 - 3.14](https://github.com/promplate/core/actions/workflows/test.yml),
-    and is [well-tested](https://promplate-python-coverage.onrender.com/) on [CPython](https://python.org/) and [PyPy](https://pypy.org/).
+    **`Promplate`** runs well on [python 3.8 - 3.14](https://github.com/promplate/core/actions/workflows/test.yml "test.yaml - promplate/core - GitHub"),
+    and is [well-tested](https://promplate-python-coverage.onrender.com/ "Promplate Python Test Coverage") on [CPython](https://python.org/ "python.org - Official Python Website") and [PyPy](https://pypy.org/ "PyPy - A Fast Python Implementation").
 
 ## A simple example
 
@@ -195,12 +195,12 @@ I am a **prompt engineer** who suffered from the following problems:
 #### Chaining prompts is somehow difficult
 
 Often we need several LLM calls in a process.
-[`LCEL`](https://python.langchain.com/docs/expression_language/) is `langchain`'s solution.
+[`LCEL`](https://python.langchain.com/docs/expression_language/ "LangChain Expression Language") is `langchain`'s solution.
 
 Ours is like that, but everything unit is a `#!py promplate.Node` instance.
 `Router` are implemented with 2-3 lines in `callback` functions through `#!py raise Jump(...)` statements.
 
-Promplate `Node`s are just [**state machines**](https://en.wikipedia.org/wiki/Finite-state_machine).
+Promplate `Node`s are just [**state machines**](https://en.wikipedia.org/wiki/Finite-state_machine "Finite-state machine - Wikipedia").
 
 #### Chat templates are hard to read
 
@@ -226,5 +226,5 @@ Promplate has a flexible callback system similarly, but you can bind simple call
 
 ### Further reading
 
-You can the [quick-start](./quick-start.md) tutorial, which is a more detailed explanation.
-If you have any questions, feel free to ask on [GitHub Discussions](https://github.com/promplate/core/discussions/categories/q-a)!
+You can the [quick-start](./quick-start.md#make-llm-calls){ data-preview } tutorial, which is a more detailed explanation.
+If you have any questions, feel free to ask on [GitHub Discussions](https://github.com/promplate/core/discussions/categories/q-a "Q&A - GitHub Discussions")!

@@ -6,7 +6,7 @@ description: Let's begin prompting in 1 minute
 
 ## Installation with `pip install`
 
-Directly install from [PyPI](https://pypi.org/project/promplate/):
+Directly install from [PyPI](https://pypi.org/project/promplate/ "promplate - PyPI"):
 
 ```sh
 pip install promplate[openai]
@@ -25,7 +25,7 @@ First, **Open a python REPL** 💻 (`ipython` or `jupyter` are OK. Just any REPL
 >>> complete = ChatComplete(api_key="...")
 ```
 
-> The `api_key` should be filled with your API Key from [OpenAI Platform](https://platform.openai.com/account/api-keys)
+> The `api_key` should be filled with your API Key from [OpenAI Platform](https://platform.openai.com/account/api-keys "API Key Management - OpenAI Platform")
 
 Then call it like this:
 
@@ -208,4 +208,4 @@ Congratulations 🎉 You've learnt the basic paradigm of using `promplate` for p
 ---
 
 Thanks for reading. There are still lots of features not mentioned here. Learn more in other pages 🤗
-If you have any questions, please feel free to ask us on [GitHub Discussions](https://github.com/promplate/core/discussions/categories/q-a).
+If you have any questions, please feel free to ask us on [GitHub Discussions](https://github.com/promplate/core/discussions/categories/q-a "Q&A - GitHub Discussions").
