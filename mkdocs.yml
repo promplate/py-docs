@@ -122,3 +122,5 @@ nav:
       - "<code>promplate.prompt</code>": references/prompt.md
       - "<code>promplate.chain</code>": references/chain.md
       - "<code>promplate.llm</code>": references/llm.md
+  - Interactive Tutorial: https://promplate.dev/
+  - Online Playground: https://promplate.dev/playground
