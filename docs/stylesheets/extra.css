@@ -17,3 +17,23 @@ a.headerlink {
 h1:first-child > a.headerlink {
   display: none !important;
 }
+
+.md-typeset {
+  h1 {
+    &:has(code) {
+      opacity: 1;
+      code {
+        font-size: 0.7em;
+        background: none;
+        padding: 0;
+        .kn,
+        .o {
+          color: var(--md-default-fg-color--lighter);
+          @media (max-width: 60em) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
