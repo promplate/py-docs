@@ -47,6 +47,17 @@ theme:
   favicon: https://promplate.dev/favicon.png
 plugins:
   - search
+  - llmstxt:
+      full_output: llms-full.txt
+      sections:
+        Overview:
+          - index.md
+          - quick-start.md
+        API References:
+          - references/index.md: API Reference for the `promplate` module
+          - references/prompt.md: API Reference for the `promplate.prompt` module
+          - references/chain.md: API Reference for the `promplate.chain` module
+          - references/llm.md: API Reference for the `promplate.llm` module`
   - mkdocstrings:
       handlers:
         python:
