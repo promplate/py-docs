@@ -2,6 +2,8 @@ site_name: Promplate
 site_url: !ENV [SITE_URL, "https://docs.py.promplate.dev"]
 repo_url: https://github.com/promplate/core
 repo_name: promplate/core
+site_description: |-
+  templating framework and agent orchestrator that progressively enhances your prompt engineering workflow with minimal dependencies
 
 theme:
   name: material

@@ -4,7 +4,7 @@ title: Introduction
 
 # Welcome to Promplate
 
-[**`Promplate`**](http://promplate.dev/ "Interactive Tutorial - Promplate") is a **templating framework** that progressively enhances your **prompt engineering** workflow with minimal dependency.
+[**`Promplate`**](http://promplate.dev/ "Interactive Tutorial - Promplate") is a **templating framework** and **agent orchestrator** that progressively enhances your **prompt engineering** workflow with minimal dependencies.
 
 ```sh
 pip install promplate #(1)!
