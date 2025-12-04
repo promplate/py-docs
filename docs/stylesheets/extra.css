@@ -39,4 +39,12 @@ h1:first-child > a.headerlink {
   .doc {
     font-family: var(--md-code-font-family);
   }
+  .autorefs-external {
+    &:not(pre &) {
+      color: var(--doc-symbol-class-fg-color);
+    }
+    code &:hover {
+      color: var(--doc-symbol-class-fg-color);
+    }
+  }
 }
