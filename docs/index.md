@@ -197,8 +197,8 @@ I am a **prompt engineer** who suffered from the following problems:
 Often we need several LLM calls in a process.
 [`LCEL`](https://python.langchain.com/docs/expression_language/ "LangChain Expression Language") is `langchain`'s solution.
 
-Ours is like that, but everything unit is a `#!py promplate.Node` instance.
-`Router` are implemented with 2-3 lines in `callback` functions through `#!py raise Jump(...)` statements.
+Ours is like that, but everything unit is a [`promplate.Node`][] instance.
+`Router` are implemented with 2-3 lines in `callback` functions through [`#!py raise Jump(...)`][promplate.Jump] statements.
 
 Promplate `Node`s are just [**state machines**](https://en.wikipedia.org/wiki/Finite-state_machine "Finite-state machine - Wikipedia").
 
@@ -215,7 +215,7 @@ which enable you to reuse prompt template fragments in different prompts.
 #### Callbacks and output parsers are hard to bind
 
 In langchain, you can bind callback to a variety of event types.
-Promplate has a flexible callback system similarly, but you can bind simple callbacks through decorators like `#!py @node.pre_process`.
+Promplate has a flexible callback system similarly, but you can bind simple callbacks through decorators like the callback registration decorators on [`Node`][promplate.Node].
 
 ### Features
 

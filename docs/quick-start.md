@@ -34,7 +34,7 @@ Then call it like this:
 'Hello! How can I assist you today?'
 ```
 
-Perhaps you don't want to provide `model` parameter everytime you call `complete`, so you can bind it like this:
+Perhaps you don't want to provide `model` parameter everytime you call [`complete`][promplate.llm.openai.ChatComplete], so you can bind it like this:
 
 ```py
 >>> complete = ChatComplete(api_key="...").bind(model="gpt-3.5-turbo-0125")
@@ -60,7 +60,7 @@ Then call it simply with a string:
 
 ??? note "If you want to use instruct models 🤔"
 
-    Simply replace `ChatComplete` by `TextComplete`:
+    Simply replace [`ChatComplete`][promplate.llm.openai.ChatComplete] by [`TextComplete`][promplate.llm.openai.TextComplete]:
 
     ```py
     >>> from promplate.llm.openai import TextComplete
@@ -69,7 +69,7 @@ Then call it simply with a string:
     ' just incredibly proud of the team, and their creation of a brand new ship makes'
     ```
 
-    And you can pass parameters when calling a `Complete` instance:
+    And you can pass parameters when calling a [`Complete`][promplate.llm.base.Complete] instance:
 
     ```py
     >>> complete("1 + 1 = ", temperature=0, max_tokens=1)
@@ -78,7 +78,7 @@ Then call it simply with a string:
 
 ??? note "If you prefer to stream the response 👀"
 
-    It is still super easy, just use `ChatGenerate`:
+    It is still super easy, just use [`ChatGenerate`][promplate.llm.openai.ChatGenerate]:
 
     ```py
     >>> from promplate.llm.openai import ChatGenerate
@@ -105,7 +105,7 @@ In **promplate**, simply use `{{ }}` to insert dynamic data.
 'Greet me. It is Sun Oct 1 03:56:02 2023 now.'
 ```
 
-You can run the prompt by `complete` we created before
+You can run the prompt by [`complete`][promplate.llm.openai.ChatComplete] we created before
 
 ```py
 >>> complete(_)
@@ -135,7 +135,7 @@ Sometimes we don't use a single prompt to complete. Here are some reasons:
 - Breaking big tasks into sub tasks may enhance interpretability, reducing debugging time
 - ...
 
-In `prompate`, We use a `Node` to represent a single "task". You can initialize a `Task` with a string like initiating a `Template`:
+In `promplate`, We use a [`Node`][promplate.Node] to represent a single "task". You can initialize a `Task` with a string like initiating a [`Template`][promplate.Template]:
 
 ```py
 >>> from promplate import Node
@@ -157,9 +157,9 @@ Such as, you can **add two nodes together** magically:
 
 ??? question "Details"
 
-    Mention that the return type of `.invoke()` is `ChainContext` which combines the context passed everywhere in a right order.
-    `__result__` is the output of last `Node`. It is automatically assigned during `.invoke()`. You can access it inside the template.
-    Outside the template, you can use `.result` of a `ChainContext` to get the last output.
+    Mention that the return type of [`.invoke()`][promplate.chain.node.Interruptible.invoke] (/references/chain/#promplate.chain.node.AbstractNode.invoke "AbstractNode.invoke") is [`ChainContext`][promplate.chain.node.ChainContext] which combines the context passed everywhere in a right order.
+    `__result__` is the output of last [`Node`][promplate.Node]. It is automatically assigned during `.invoke()`. You can access it inside the template.
+    Outside the template, you can use [`.result`][promplate.ChainContext.result] of a `ChainContext` to get the last output.
 
     The following three expressions should return the same string:
 
@@ -189,7 +189,7 @@ Such as, you can **add two nodes together** magically:
 
 In `promplate`, you can register a callback everytime before or after a node runs.
 
-Besides manually implementing the `Callback` interface, you can directly use decorators syntax like so:
+Besides manually implementing the [`Callback`][promplate.BaseCallback] interface, you can directly use decorators syntax like so:
 
 ```py
 >>> @greet.end_process
