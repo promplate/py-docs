@@ -38,6 +38,8 @@ theme:
   icon:
     repo: material/github
     annotation: material/star-four-points-circle
+    logo: simple/pypi
+  favicon: https://promplate.dev/favicon.png
 plugins:
   - search
   - mkdocstrings:
