@@ -9,3 +9,11 @@
 code {
   font-feature-settings: "calt" 1;
 }
+
+a.headerlink {
+  user-select: none;
+}
+
+h1:first-child > a.headerlink {
+  display: none !important;
+}
