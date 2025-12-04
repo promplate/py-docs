@@ -15,7 +15,7 @@ pip install promplate #(1)!
 
 !!! tip ""
 
-    **`Promplate`** runs well on [python 3.8 - 3.14](https://github.com/promplate/core/actions/workflows/test.yml "test.yaml - promplate/core - GitHub"),
+    **`Promplate`** runs well on [python 3.8 - 3.14](https://github.com/promplate/core/actions/workflows/test.yml "test.yml - promplate/core - GitHub"),
     and is [well-tested](https://promplate-python-coverage.onrender.com/ "Promplate Python Test Coverage") on [CPython](https://python.org/ "python.org - Official Python Website") and [PyPy](https://pypy.org/ "PyPy - A Fast Python Implementation").
 
 ## A simple example
