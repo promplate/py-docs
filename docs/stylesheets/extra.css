@@ -36,4 +36,7 @@ h1:first-child > a.headerlink {
       }
     }
   }
+  .doc {
+    font-family: var(--md-code-font-family);
+  }
 }
