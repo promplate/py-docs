@@ -4,7 +4,7 @@ version = "1"
 authors = [{ name = "Muspi Merol", email = "me@promplate.dev" }]
 dependencies = [
     "mkdocs>=1.6.1",
-    "mkdocs-material>=9.7.5",
+    "mkdocs-material>=9.7.6",
     "mkdocstrings-python~=2.0.3",
     "brotli>=1.2.0",
     "minify-html>=0.18.1",
