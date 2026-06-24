@@ -5,7 +5,7 @@ authors = [{ name = "Muspi Merol", email = "me@promplate.dev" }]
 dependencies = [
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.5",
-    "mkdocstrings-python~=2.0.3",
+    "mkdocstrings-python~=2.0.5",
     "brotli>=1.2.0",
     "minify-html>=0.18.1",
     "promplate~=0.3.5.6",
